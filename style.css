@@ -1,0 +1,122 @@
+main {
+    background-color: aquamarine;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    
+}
+
+body {
+    margin: 0;
+}
+
+#home1 {
+    position: absolute;
+    background-image:url(./images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+    
+}
+.maingrd {
+    position: relative;
+    top: 280px;
+}
+
+.tit1{
+    position: relative;
+    z-index: 2;
+    top: 5px;
+    left: 35%;
+    color: rgb(231, 167, 63);
+    text-shadow: 2px 2px #7e7c7c;
+
+}
+
+.dev{
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    width: 200px;
+    left:40%;
+}
+
+.sec1 {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    background-color: grey;
+    align-items: center;
+   position: relative;
+    left:5%;
+    /* grid-template-areas: "text1 line ."
+                        " . line text2"
+                        "text3 line ."
+                        ". line text4";
+     */
+}
+
+.leftones div:nth-child(1){
+    grid-area: text1;
+    border: 2px solid blue;
+    border-radius: 5px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.leftones div:nth-child(2){
+    grid-row: 3/4;
+    grid-column: 1/2;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.linebreak {
+    grid-row:1/ span 4;
+    grid-column: 2 / 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+
+}
+
+.linebreak > #line {
+    height: 100%;
+    width: 2px;
+    background-color: brown;
+    grid-row:1/ span 4;
+    grid-column: 2 / 3;
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+    left: 10px;
+
+}   
+
+.linebreak > #balls {
+    display: flex;
+    position: relative;
+    justify-content:  center;
+    z-index: 2;
+    grid-row:1/ span 4;
+    grid-column: 2 / 3;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+#balls1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: blue;
+    
+}
