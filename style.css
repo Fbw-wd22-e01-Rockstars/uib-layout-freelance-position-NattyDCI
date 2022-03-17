@@ -1,15 +1,21 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 main {
     background-color: aquamarine;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(102, 101, 101);
     height: 60px;
     width: 100%;
     line-height: 50px;
     position: relative;
-    top: 60px;
+    top: 400px;
+    position: sticky;
     
 }
 
@@ -46,29 +52,34 @@ body {
 }
  .maingrd {
     position: relative;
-    top: 453px;
+    top: 450px;
+   
 } 
 
 .tit1{
     position: relative;
     z-index: 2;
     top: 40px;
-    left: 41%;
+    left: 36%;
     color: rgb(231, 167, 63);
     text-shadow: 2px 2px #7e7c7c;
 
+}
+
+#home1 > h2 {
+    font-size: 30px;
 }
 
 .dev{
     position: relative;
     z-index: 1;
     top: 50px;
-    width: 350px;
+    width: 250px;
     left:40%;
 }
 
 .sec1 {
-    
+    border-radius: 40px;
     width: 1400px;
     height: 900px;
     display: grid;
@@ -85,7 +96,8 @@ body {
 }
 
 .sec2 {
-    width: 1400px;
+    border-radius: 40px;
+    width: 1380px;
     height: 500px;
     background-color: rgb(209, 205, 205);
     position: relative;  
@@ -116,7 +128,7 @@ body {
 }
 
 .two {
-    background-color: pink;
+    background-color: rgb(221, 25, 211);
     z-index: 2;
     align-self: center;
     position: absolute;
@@ -137,7 +149,7 @@ body {
 .leftones1{
     height: 140px;
     width: 500px;
-    border: 3px solid blue;
+    border: 3px solid rgb(184, 13, 141);
     border-radius: 5px;
     grid-row: 1/2;
     grid-column: 1/2;
@@ -150,7 +162,7 @@ body {
     height: 140px;
     width: 500px;
     grid-column: 1/2;
-    border: 3px solid blue;
+    border: 3px solid rgb(184, 13, 141);
     border-radius: 5px;
     padding: 20px;
     margin-left: 100px;
@@ -159,7 +171,7 @@ body {
 .rightones1{
     height: 140px;
     width: 500px;
-    border: 3px solid blue;
+    border: 3px solid rgb(184, 13, 141);
     border-radius: 5px;
     grid-row: 2/3;
     grid-column: 3/4;
@@ -171,7 +183,7 @@ body {
     width: 500px;
     grid-row: 4/5;
     grid-column: 3/4;
-    border: 3px solid blue;
+    border: 3px solid rgb(184, 13, 141);
     border-radius: 5px;
     padding: 20px;
 }
@@ -188,14 +200,14 @@ body {
 
 .linebreak > #line {
     height: 880px;
-    width: 2px;
-    background-color: brown;
+    width: 3px;
+    background-color: rgb(37, 175, 255);
     grid-row:1 / span 3;
     grid-column: 2 / 3;
     display:inline-block;
     position: relative;
     z-index: 1;
-    left: 10px;
+    left: 11.5px;
     margin-bottom: 20px;
 
 }   
@@ -216,7 +228,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: blue;
+    background-color: rgb(95, 114, 139);
     
 }
 
@@ -230,7 +242,7 @@ body {
 }
 
 .balls1, .balls3 {
-    background-color: orange;
+    background-color: rgb(65, 134, 224);
 }
 
 footer {
@@ -246,7 +258,7 @@ footer {
 .home-link {
     background-color: rgb(241, 232, 109);
     border: 1px solid orange;
-    width: 60px;
+    width: 70px;
     height: 14px;
     border-radius: 10px;
     padding: 20px;
